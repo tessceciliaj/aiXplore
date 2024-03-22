@@ -7,9 +7,9 @@ const Illusion = () => {
   return (
     <div className='section'>
       <Header btnText="Read more" />
-       <div className='flex w-full max-w-7xl justify-between py-28 items-center'>
+       <div className='flex flex-col md:flex-row gap-8 w-full max-w-7xl pt-8 items-center'>
           <Heading text1="AiXplore" text2="Illusion" />
-          <div className='bg-accentPurple w-96 h-52'>Video placeholder</div>
+          <Video src="\natlink.mp4"/>
         </div>
     </div>
   )

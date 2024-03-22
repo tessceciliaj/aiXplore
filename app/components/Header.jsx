@@ -1,12 +1,8 @@
 "use client";
-import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-import { Bot } from "lucide";
-
+import Button from "./Button";
 
 const Header = ({btnText}) => {
- 
-
   return (
     <header className="flex justify-between w-full items-start sticky top-0 max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -28,11 +24,7 @@ const Header = ({btnText}) => {
       >
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#808080" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-bot"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
        </motion.div>
-      <button
-          className="bigScreen"
-        >
-          {btnText}
-        </button>
+       <Button href="" icon="" text={btnText} />
     </header>
   );
 };

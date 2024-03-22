@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import React from 'react'
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-const Heading = ({text1, text2}) => {
+const Heading = ({text1, text2, text3}) => {
     const [text, count] = useTypewriter({
-        words: [text1, text2],
+        words: [text1, text2, text3],
         loop: true,
         delaySpeed: 2000,
       });
@@ -25,8 +25,9 @@ const Heading = ({text1, text2}) => {
       transition={{
         duration: 1.5,
       }}
+
     >
-      <h1 className="text-lg md:text-5xl lg:text-6xl text-lightGray font-semibold px-10">
+      <h1 className="text-lg md:w-96 md:text-5xl lg:text-6xl text-lightGray font-semibold px-10">
       <span className="mr-3">{text}</span>
       <Cursor cursorColor="#5d00ff" />
     </h1>

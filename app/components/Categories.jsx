@@ -1,28 +1,14 @@
-
 "use client"
-import Link from "next/link"
-import { motion } from "framer-motion";
+import { BrainCircuit, Code, Palette } from "lucide-react"
+import Button from "./Button"
 
 const Categories = () => {
   return (
-
-    <div
-    className="flex flex-col justify-end items-end w-full max-w-7xl gap-4 md:flex md:flex-row md:justify-between"
-  >
-        <Link href="/animation">
-        <button
-        >Animation</button>
-        </Link>
-         <Link href="/">
-         <button>Video</button>
-        </Link> 
-       <Link href="/">
-       <button>Productivity</button>
-        </Link>
-        <Link href="/">
-        <button>Sound</button>
-        </Link> 
-       </div> 
+    <div className="flex flex-col justify-end items-end w-full max-w-7xl gap-4 md:flex md:flex-row md:justify-between" >
+      <Button href="AiTools" icon={<BrainCircuit />} text="AiTools" />
+      <Button href="/Art" icon={<Palette />} text="GenArt" />
+      <Button href="/Problems" icon={<Code />} text="Problems" />
+    </div> 
 
   )
 }
