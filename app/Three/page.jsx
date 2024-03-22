@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
-import WindowManager from './WindowMAnager.js'
+import WindowManager from './WindowManager.js'
 
 
 const ThreeScene = () => {
