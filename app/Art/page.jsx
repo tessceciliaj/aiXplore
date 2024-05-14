@@ -6,7 +6,7 @@ import { Box, DoorOpen } from "lucide-react"
 const Art = () => {
   return (
     <motion.div className="flex flex-col md:flex-row items-center justify-center w-full h-screen gap-8">
-        <Button href="/" icon={<DoorOpen />} text="Homepage" />
+        <Button href="/FlutterAnimation" icon={<DoorOpen />} text="Flutter Animaation" />
         <Button href="/Three" icon={<Box />} text="Multiple Window 3D" />
     </motion.div>
     )

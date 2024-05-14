@@ -164,7 +164,7 @@ const ThreeScene = () => {
     
           let s = 100;
           // let s = 100 + i * 50;
-          let cube = new t.Mesh(new t.SphereGeometry(s, s, s), new t.MeshBasicMaterial({color: c , wireframe: true}));
+          let cube = new t.Mesh(new t.BoxGeometry(s, s, s), new t.MeshBasicMaterial({color: c , wireframe: true}));
           cube.position.x = win.shape.x + (win.shape.w * .5);
           cube.position.y = win.shape.y + (win.shape.h * .5);
     
