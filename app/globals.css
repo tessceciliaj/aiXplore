@@ -36,6 +36,14 @@ body {
   .section {
     @apply flex min-h-screen flex-col items-center justify-between p-12;
   }
+
+  .h3 {
+    @apply font-semibold text-2xl;
+  }
+
+  .h1 {
+    @apply font-semibold text-4xl;
+  }
 }
 
 button {
